@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'itim';
+  src: url('./Fonts/Itim-Regular.ttf');
+}
+@font-face {
+  font-family: 'krub';
+  src: url('./Fonts/Krub-SemiBold.ttf');
+}
+body {
+  margin: 0;
+  background: #EFF7F6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+  font-family: itim, Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

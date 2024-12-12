@@ -1,0 +1,34 @@
+#root {
+  max-width: 128rem;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: 'krub';
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.todoCounter {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.todoSearch-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.createTodoButton-container{
+  position: absolute;
+  bottom: 5rem;
+  right: 2rem;
+}
+
+.todoList-container {
+  margin-top: 2rem;
+}

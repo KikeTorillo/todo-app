@@ -1,0 +1,8 @@
+.createTodoButton {
+    background-image: url("./../../assets/icons/New.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6.7rem;
+    height: 6.3rem;
+}

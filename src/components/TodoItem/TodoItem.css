@@ -1,0 +1,49 @@
+.todoItem {
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F7D6E0;
+    color: #5C677D;
+    width: 26.1rem;
+    border-radius: 1rem;
+    outline: none;
+    border: .2rem solid #000000;
+    box-shadow: 0rem .2rem .5rem 0rem #000000;
+    padding: .5rem;
+}
+
+.checked {
+    background-image: url("./../../assets/icons/checked.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.uncheck{
+    background-image: url("./../../assets/icons/uncheck.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.todoItem p {
+    font-size: 1.5rem;
+    width: 14rem;
+    white-space: wrap;
+    word-wrap: break-word;
+}
+
+.deleteTodoButton{
+    background-image: url("./../../assets/icons/delete_forever.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2.4rem;
+    height: 2.4rem;
+}
