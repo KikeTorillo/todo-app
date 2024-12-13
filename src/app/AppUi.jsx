@@ -3,7 +3,7 @@ import { TodoCounter } from '../components/TodoCounter/TodoCounter'
 import { TodoSearch } from '../components/TodoSearch/TodoSearch'
 import { TodoList } from '../components/TodoList/TodoList'
 import { TodoItem } from '../components/TodoItem/TodoItem'
-import CircularProgress from '@mui/material/CircularProgress';
+import { LoaderTodo } from '../components/LoaderTodo/LoaderTodo'
 import { useContext } from 'react'
 import { TodoContext } from './context/TodoContext'
 import { CreateTodoButton } from '../components/CreateTodoButton/CreateTodoButton'
@@ -30,7 +30,7 @@ function AppUi() {
             </div>
             <div className='todoList-container'>
                 <TodoList>
-                    {loading && <CircularProgress />}
+                    {loading && <LoaderTodo />}
                     {error && <p>Hubo un error</p>}
                     {(!loading && searchedTodos.length === 0) && <p>Crea tu primer To-do-</p>}
                     {searchedTodos.map((todo) => {

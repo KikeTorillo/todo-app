@@ -6,10 +6,12 @@
 h1 {
   font-size: 3.2rem;
   font-family: 'krub';
+  color: #5C677D;
 }
 
 h2 {
   font-size: 2rem;
+  color: #5C677D;
 }
 
 .todoCounter {
