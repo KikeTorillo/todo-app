@@ -1,6 +1,6 @@
 import React from "react";
 import './TodoItem.css';
-import Checkbox from '@mui/material/Checkbox';
+
 function TodoItem({ text, done, completeTodo, deleteTodo }) {
     return (
         <li className="todoItem">

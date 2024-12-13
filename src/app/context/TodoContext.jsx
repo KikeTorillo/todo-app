@@ -12,15 +12,21 @@ function TodoProvider({ children }) {
         error
     } = useLocalStorage('TODO_V1', []);
     const [searchValue, setSearchValue] = useState('');
+    const [filterTodo, setFilterTodo] = useState('progress');
     const totalTodos = todos.length;
     const completedTodos = todos.filter((todo) => {
         if (todo.done) {
             return todo;
         }
     });
+    
     const searchedTodos = todos.filter((todo) => {
         if (todo.text.toLowerCase().includes(searchValue.toLowerCase())) {
-            return todo;
+            if (!todo.done && filterTodo === 'progress') {
+                return todo;
+            }else if (todo.done && filterTodo === 'end') {
+                return todo;
+            }
         }
     });
 
@@ -67,7 +73,9 @@ function TodoProvider({ children }) {
                 deleteTodo,
                 openModal,
                 setOpenModal,
-                addNewTodo
+                addNewTodo,
+                filterTodo,
+                setFilterTodo
             }
         }>
             {children}

@@ -25,12 +25,20 @@ h2 {
   margin-top: 1rem;
 }
 
+.todoFilter-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+
+.todoList-container {
+  margin-top: 2rem;
+}
+
 .createTodoButton-container{
   position: absolute;
   bottom: 5rem;
   right: 2rem;
-}
-
-.todoList-container {
-  margin-top: 2rem;
 }

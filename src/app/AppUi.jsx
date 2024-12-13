@@ -1,14 +1,18 @@
-import './App.css'
+import React from 'react'
+import { useContext } from 'react'
+import { TodoContext } from './context/TodoContext'
+
 import { TodoCounter } from '../components/TodoCounter/TodoCounter'
 import { TodoSearch } from '../components/TodoSearch/TodoSearch'
 import { TodoList } from '../components/TodoList/TodoList'
 import { TodoItem } from '../components/TodoItem/TodoItem'
 import { LoaderTodo } from '../components/LoaderTodo/LoaderTodo'
-import { useContext } from 'react'
-import { TodoContext } from './context/TodoContext'
 import { CreateTodoButton } from '../components/CreateTodoButton/CreateTodoButton'
 import { Modal } from '../Modals/Modal'
 import { TodoForm } from '../components/TodoForm/TodoForm'
+import { TodoFilter } from '../components/TodoFilter/TodoFilter'
+
+import './App.css'
 
 
 function AppUi() {
@@ -27,6 +31,9 @@ function AppUi() {
             <TodoCounter />
             <div className='todoSearch-container'>
                 <TodoSearch />
+            </div>
+            <div className='todoFilter-container'>
+            <TodoFilter/>
             </div>
             <div className='todoList-container'>
                 <TodoList>
