@@ -23,9 +23,9 @@ function TodoForm() {
                 </button>
                 <button
                     className="addButton"
-                    onClick={() => setOpenModal(!openModal)}
+                    onClick={() => addNewTodo(textValue)}
                 >
-                    Cancelar
+                    Agregar
                 </button>
             </div>
 
